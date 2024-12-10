@@ -1,0 +1,114 @@
+/* src/ContactUs.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-section {
+    background: url('https://i.pinimg.com/236x/82/07/a2/8207a27755adb7023e03112769ba649b.jpg') no-repeat center center/cover; /* Added background image */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.contact-container:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6f61;
+}
+
+h2 {
+    font-size: 32px;
+    color: #d4576b; /* Updated color for the heading */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: #555; /* Slightly darker for better contrast */
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ff6f61; /* Updated color for labels */
+    text-align: left;
+    font-weight: bold; /* Make labels bold */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff6f61;
+    background-color: #fef9f9;
+    outline: none;
+    box-shadow: 0 8px 15px rgba(255, 111, 97, 0.2);
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: #d4576b; /* Updated button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(255, 111, 97, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: #e95d53;
+    box-shadow: 0 12px 30px rgba(255, 111, 97, 0.6);
+    transform: translateY(-3px);
+}
+
+.submit-button:active {
+    background-color: #c94c48; /* Darker color on click */
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.5);
+    transform: translateY(0);
+}
